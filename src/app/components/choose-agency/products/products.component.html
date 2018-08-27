@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="col-lg-4 product" *ngFor="let product of products | cheap:[selectedFilter]">
+    <div class="container one-product-wrapper">
+      <div class="col-lg-6">
+        <img src="{{ product.image }}" >
+      </div>
+      <div class="col-lg-6">
+        <span class="details">
+          <h6 class="name-product">{{ product.product }}</h6>
+          <span class="price-name">Price</span>
+          <span class="price">{{ product.cost }}</span>
+          <small class="lead-time">Lead time: {{ product.lead_time }} {{ product.currency }}</small>
+          <span class="line-check">
+            <span class="loader-wrapper">
+              <span class="loaded"></span>
+            </span>
+            <input class="checkbox-product" type="checkbox">
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

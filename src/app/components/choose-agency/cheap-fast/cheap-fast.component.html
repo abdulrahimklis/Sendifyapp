@@ -1,0 +1,47 @@
+<div class="container wraper-cheap-fast">
+  <div class="col-lg-1 cheap-fast">
+    <div class="one">
+      1
+    </div>
+  </div>
+  <div class="col-lg-4 cheap-fast">
+    <div class="icons-cheap-fast">
+      <div>
+        <i class="material-icons">delete</i>
+      </div>
+      <div>
+        <i class="material-icons">history</i>
+      </div>
+      <div>
+        <i class="material-icons">edit</i>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 cheap-fast" *ngFor="let product of top | cheap:[selectedFilter] | slice:0:2">
+    <div class="col-lg-6 image-wrapper-cheap-fast">
+      <img src="{{ product.image }}" >
+    </div>
+    <div class="col-lg-6">
+        <span class="details">
+          <h6 class="name-product">{{ product.product }}</h6>
+          <span class="price-name">Price</span>
+          <span class="price">{{ product.cost }}</span>
+          <small class="lead-time">Lead time: {{ product.lead_time }} {{ product.currency }}</small>
+          <span class="line-check">
+            <span class="loader-wrapper">
+              <span class="loaded"></span>
+            </span>
+            <input class="checkbox-product" type="checkbox">
+          </span>
+        </span>
+    </div>
+  </div>
+  <div class="col-lg-1 cheap-fast">
+    <span class="right-column-number">
+      <span class="arrow-icon-google">
+        <i class="material-icons">keyboard_arrow_up</i>
+      </span>
+      <span class="arrow-number">9</span>
+    </span>
+  </div>
+</div>

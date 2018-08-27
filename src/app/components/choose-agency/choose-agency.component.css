@@ -1,0 +1,24 @@
+.main-side-nav {
+  display: block;
+  padding: 0;
+}
+
+.main-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.row-around-main {
+  width: 90%;
+}
+
+.content-wrapper {
+  margin: 10% 10%;
+}
+
+.container-around-main {
+  margin: 0 auto;
+  padding: 0;
+}
+
+

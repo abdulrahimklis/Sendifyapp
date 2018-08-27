@@ -1,0 +1,7 @@
+<div class="container">
+  <h6 class="cheap-fast-header">Sort by</h6>
+  <select [(ngModel)]="selectedValue" (ngModelChange)="selectedFilter.emit($event)" class="filter-cheap-fast">
+    <option value="cost">Cheapest</option>
+    <option value="lead_time">Fastes</option>
+  </select>
+</div>
